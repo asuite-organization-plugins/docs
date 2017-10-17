@@ -14,7 +14,6 @@ Text Domain:  asuite-docs
 function wpse_load_plugin_css() {
     $plugin_url = plugin_dir_url( __FILE__ );
 
-    wp_enqueue_style( 'style1', $plugin_url . 'css/style1.css' );
-    wp_enqueue_style( 'style2', $plugin_url . 'css/style2.css' );
+    wp_enqueue_style( 'style1', $plugin_url . 'docs-stylesheet.css' );
 }
 add_action( 'wp_enqueue_scripts', 'wpse_load_plugin_css' );
